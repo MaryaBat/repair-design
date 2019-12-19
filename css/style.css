@@ -303,9 +303,44 @@ template {
 [hidden] {
   display: none; }
 
+.button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase; }
+  .button--primary {
+    background-color: #E3B873;
+    color: #fff; }
+
 .container {
-  max-width: 1256 px;
+  max-width: 1256px;
   margin: auto; }
 
 .header {
-  background-color: #131313; }
+  background-color: #131313;
+  padding: 24px 0px; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  color: #E3B873;
+  text-transform: uppercase; }
+
+.nav__item {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 40px; }
+
+.phone {
+  color: #E3B873; }
+
+.contacts__phone {
+  margin-right: 45px; }
+
+body {
+  font-family: sans-serif;
+  font-size: 14px; }
