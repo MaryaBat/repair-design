@@ -328,8 +328,7 @@ template {
 
 .container {
   max-width: 1256px;
-  margin: auto;
-  border: 1px solid red; }
+  margin: auto; }
 
 .header {
   background-color: #131313;
@@ -355,6 +354,30 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.hero {
+  position: relative;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #fff; }
+  .hero__instagram {
+    left: 0;
+    top: 0;
+    position: absolute;
+    max-width: 80px;
+    height: 100%; }
+  .hero .instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #131313; }
+    .hero .instagram__link {
+      text-transform: uppercase;
+      text-decoration: none;
+      transform: rotate(-90deg);
+      color: #E3B873; }
+  .hero .title {
+    margin: 0; }
 
 body {
   font-family: 'Futura Book',sans-serif;
