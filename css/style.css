@@ -331,6 +331,11 @@ template {
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0px; }
 
@@ -357,6 +362,7 @@ template {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
@@ -366,19 +372,21 @@ template {
     position: absolute;
     max-width: 80px;
     height: 100%; }
-  .hero .instagram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #131313; }
-    .hero .instagram__link {
-      text-transform: uppercase;
-      text-decoration: none;
-      transform: rotate(-90deg);
-      color: #E3B873; }
-  .hero .title {
-    margin: 0; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: rotate(-90deg);
+    color: #E3B873; }
+
+.title {
+  margin: 0; }
 
 body {
-  font-family: 'Futura Book',sans-serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
