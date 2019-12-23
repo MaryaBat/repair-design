@@ -1,13 +1,20 @@
 .hero
   position: relative
   display: flex
-  flex-direction: colum
+  flex-direction: column
   justify-content: center
   padding-top: 100px
   background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
   height: 100vh
   color: $light
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)
   &__content
+    position: relative
     max-width: 670px
   &__text
     font-size: 22px
@@ -33,16 +40,32 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    &:after
+      content: ''
+      background: url('../img/arrow-dawn.svg') no-repeat center
+      width: 30px
+      height: 30px
+      border: 2px solid $primary
+      border-radius: 50%
+      margin-left: 12px
 .instagram
   display: flex
-  justify-content: center
   align-items: center
+  justify-content: center
   background-color: $dark
   &__link
+    display: flex
     text-transform: uppercase
     text-decoration: none
-    transform: rotate(-90deg)
+    transform: rotate(90deg)
     color: $primary
+    line-height: 0.8
+    &:after
+      content: ''
+      width: 50px
+      height: 1px
+      background-color: $primary
+      margin-left: 8px
 .title
   margin: 0
   font-family: 'Yeseva One', cursive
