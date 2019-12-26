@@ -519,14 +519,17 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 1.64rem;
+    line-height: 132.83%;
+    min-width: 24.2rem; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
     max-width: 22.86rem; }
   .hero__text {
     font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2.28rem;
+    line-height: 135.84%; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
