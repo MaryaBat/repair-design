@@ -19,11 +19,17 @@
     position: relative
     max-width: 47.85rem
     margin-left: 4.28rem
+  &__title
+    margin-bottom: 1rem
   &__text
     font-size: 1.57rem
+    line-height: 30px
     max-width: 500px
+    margin: 0
+    margin-bottom: 3.1rem
   &__button
-    margin-right: 20px
+    margin-right: 19px
+    padding: 19px 28px 19px 29px
   &__instagram
     position: absolute
     left: 0
@@ -40,9 +46,11 @@
     min-width: 17.6rem
     min-height: 6.92rem
     background-color: $dark
+    font-family: 'Yeseva One', cursive
     text-transform: uppercase
     text-decoration: none
     color: $light
+    font-size: 0.8rem
     &:after
       content: ''
       background: url('../img/arrow-dawn.svg') no-repeat center
@@ -50,7 +58,7 @@
       height: 30px
       border: 2px solid $primary
       border-radius: 50%
-      margin-left: 12px
+      margin-left: 18px
 .instagram
   display: flex
   align-items: center
@@ -64,6 +72,7 @@
     transform: rotate(90deg)
     color: $primary
     line-height: 0.8
+    font-size: 1.08rem
     &:after
       content: ''
       width: 50px
@@ -75,5 +84,10 @@
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
   font-size: 2.857rem
+  line-height: 3.8rem
+  margin-bottom: 1.35rem
   &--primary
     color: $primary
+.button
+  &--outline
+    padding: 18px 45px 18px 45px

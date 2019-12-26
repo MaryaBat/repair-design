@@ -318,7 +318,7 @@ template {
   display: none; }
 
 .button {
-  padding: 13px 20px;
+  padding: 11px 24px 11px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -382,6 +382,7 @@ body {
   align-items: center; }
 
 .logo {
+  font-size: 1.075rem;
   color: #E3B873;
   text-transform: uppercase; }
 
@@ -389,7 +390,7 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.85rem;
+  margin-right: 2.5rem;
   transition: collor 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -421,11 +422,17 @@ body {
     position: relative;
     max-width: 47.85rem;
     margin-left: 4.28rem; }
+  .hero__title {
+    margin-bottom: 1rem; }
   .hero__text {
     font-size: 1.57rem;
-    max-width: 500px; }
+    line-height: 30px;
+    max-width: 500px;
+    margin: 0;
+    margin-bottom: 3.1rem; }
   .hero__button {
-    margin-right: 20px; }
+    margin-right: 19px;
+    padding: 19px 28px 19px 29px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -442,9 +449,11 @@ body {
     min-width: 17.6rem;
     min-height: 6.92rem;
     background-color: #131313;
+    font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-size: 0.8rem; }
     .hero__scroll-down:after {
       content: '';
       background: url("../img/arrow-dawn.svg") no-repeat center;
@@ -452,7 +461,7 @@ body {
       height: 30px;
       border: 2px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 18px; }
 
 .instagram {
   display: flex;
@@ -466,7 +475,8 @@ body {
     text-decoration: none;
     transform: rotate(90deg);
     color: #E3B873;
-    line-height: 0.8; }
+    line-height: 0.8;
+    font-size: 1.08rem; }
     .instagram__link:after {
       content: '';
       width: 50px;
@@ -478,9 +488,14 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 2.857rem; }
+  font-size: 2.857rem;
+  line-height: 3.8rem;
+  margin-bottom: 1.35rem; }
   .title--primary {
     color: #E3B873; }
+
+.button--outline {
+  padding: 18px 45px 18px 45px; }
 
 @media screen and (max-width: 1200px) {
   html {
