@@ -605,7 +605,8 @@ img {
   flex-wrap: wrap; }
   .swiper-slide__img {
     margin-top: -14rem;
-    margin-left: 3rem; }
+    margin-left: 3rem;
+    width: 100%; }
   .swiper-slide__text {
     flex-basis: 40%;
     padding-bottom: 1.8rem;
@@ -761,7 +762,13 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .hero__title {
+    font-size: 1.64rem;
+    line-height: 132.83%; }
+  .section-title__text {
+    font-size: 1rem;
+    max-width: 21.7rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -777,34 +784,27 @@ img {
       color: #fff; }
     .design__card {
       margin-bottom: 5.7rem; }
-  .section__text {
-    font-size: 1rem;
-    text-align: center;
-    max-width: 21.7rem;
-    margin: auto; }
-  .swiper-slide {
-    width: 80%; }
-    .swiper-slide__img {
-      margin: auto;
-      padding: 0;
-      width: 100%; }
+  .swiper-slide__img {
+    margin: auto;
+    padding: 0;
+    width: 100%; }
   .col-40 {
     width: 100%; }
   .col-60 {
     width: 100%;
     order: -1; }
   .section-title__word {
+    display: inline-block;
     text-align: center;
-    margin-left: 8rem;
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     .section-title__word::after {
       display: none; }
   .section-title__text {
-    font-size: 1rem;
+    font-size: 1.28rem;
     text-align: center;
-    max-width: 21.7rem;
-    margin: auto;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    height: 6.14rem; }
   .section-title__heading--primary {
     text-align: center;
     margin: 0;
@@ -831,4 +831,15 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem;
+    z-index: 3; }
+  .hero::after {
+    display: none; }
+  .section-title__text {
+    font-size: 1rem;
+    margin: auto;
+    margin-bottom: 2.5rem; }
+  .section-title__heading--primary {
+    max-width: 25.214rem; }
+  .section-title__word {
+    display: block; } }
