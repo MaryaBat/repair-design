@@ -766,7 +766,9 @@ img {
     margin-left: 0; }
   .hero__title {
     font-size: 1.64rem;
-    line-height: 132.83%; } }
+    line-height: 132.83%; }
+  .section-title__text {
+    max-width: 25rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -791,8 +793,13 @@ img {
   .col-60 {
     width: 100%;
     order: -1; }
+  .section-title__heading--primary {
+    text-align: center; }
   .section-title__text {
-    min-width: 20rem; }
+    min-width: 19rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem; }
   .section-title__word {
     display: inline-block;
     text-align: center;
@@ -830,4 +837,6 @@ img {
   .section-title__word {
     display: block; }
   .section-title__text {
-    text-align: center; } }
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem; } }

@@ -15,6 +15,10 @@
     &__title
       font-size: 1.64rem
       line-height: 132.83%
+  .section
+    &-title
+      &__text
+        max-width: 25rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -44,8 +48,13 @@
     order: -1
   .section
     &-title
+      &__heading--primary
+        text-align: center
       &__text
-        min-width: 20rem
+        min-width: 19rem
+        text-align: center
+        margin: auto
+        margin-bottom: 3rem
       &__word
         display: inline-block
         text-align: center
@@ -89,6 +98,8 @@
         display: block
       &__text
         text-align: center
+        margin: auto
+        margin-bottom: 3rem
         
 
  
