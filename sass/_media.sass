@@ -15,11 +15,6 @@
     &__title
       font-size: 1.64rem
       line-height: 132.83%
-  .section
-    &-title
-      &__text
-        font-size: 1rem
-        max-width: 21.7rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -49,6 +44,8 @@
     order: -1
   .section
     &-title
+      &__text
+        min-width: 20rem
       &__word
         display: inline-block
         text-align: center
@@ -56,16 +53,6 @@
         margin: 0
         &::after
           display: none
-      &__text
-        font-size: 1.28rem
-        text-align: center
-        margin-bottom: 2rem
-        height: 6.14rem
-      &__heading--primary
-        text-align: center
-        margin: 0
-        margin-bottom: 1.57rem
-        padding: 0
 @media screen and ( max-width: 570px )
   .section
     &__title
@@ -96,14 +83,14 @@
       display: none
   .section
     &-title
-      &__text
-        font-size: 1rem
-        margin: auto
-        margin-bottom: 2.5rem
       &__heading--primary
-        max-width: 25.214rem
+        text-align: center
       &__word
         display: block
+      &__text
+        text-align: center
+        
+
  
  
   
