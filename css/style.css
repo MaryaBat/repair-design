@@ -336,6 +336,8 @@ template {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
+    .button--outline:hover {
+      box-shadow: none; }
 
 .label {
   font-size: 1.07rem; }
@@ -349,7 +351,7 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -414,14 +416,18 @@ img {
     text-align: center; }
     .section-title--left {
       text-align: left; }
+    .section-title--light {
+      color: #fff;
+      font-size: 1.42rem;
+      flex-height: 2rem; }
     .section-title__heading {
       text-transform: uppercase;
       font-family: 'Yeseva One', cursive;
       font-style: normal;
       font-weight: normal;
-      font-size: 1.92rem;
+      font-size: 1.6rem;
       line-height: 2.64rem;
-      letter-spacing: -0.07em; }
+      margin-top: 2.5rem; }
       .section-title__heading--primary {
         color: #E3B873; }
     .section-title__word {
@@ -447,7 +453,7 @@ img {
         width: 32px;
         height: 2px;
         background-color: #E3B873;
-        margin: 0 10px; }
+        margin: 0px 10px 17px 10px; }
     .section-title__description {
       margin: auto;
       margin-top: 1.64rem;
@@ -600,6 +606,9 @@ img {
 .button--outline {
   padding: 18px 45px 18px 45px; }
 
+.projects {
+  padding-bottom: 30rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
@@ -645,6 +654,71 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+.control__section-title {
+  margin-bottom: 2.224rem;
+  margin-top: -30.67rem; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4.428rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/Video_mask.jpg") center no-repeat;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+  .control__video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.control__text {
+  max-width: 40.785rem;
+  margin: auto;
+  margin-bottom: 4.285rem;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 2.42rem; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    border-radius: 30px; }
+
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto;
+  justify-content: space-between; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__label {
+  margin-bottom: -5px; }
+
+.control__button {
+  padding: 1.28rem 4.8rem; }
+
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -793,20 +867,56 @@ img {
   .col-60 {
     width: 100%;
     order: -1; }
-  .section-title__heading--primary {
+  .dark-title__heading--primary {
     text-align: center; }
-  .section-title__text {
-    min-width: 19rem;
+  .dark-title__text {
+    min-width: 15rem;
     text-align: center;
     margin: auto;
     margin-bottom: 3rem; }
-  .section-title__word {
+  .dark-title__word {
     display: inline-block;
     text-align: center;
     padding: 0;
     margin: 0; }
-    .section-title__word::after {
-      display: none; } }
+    .dark-title__word::after {
+      display: none; }
+  .control {
+    padding-bottom: 0;
+    background-color: #131313; }
+    .control__video {
+      max-width: 100%;
+      min-height: 14.78rem; }
+    .control__text {
+      max-width: 100%;
+      color: #fff;
+      font-size: 14px;
+      line-height: 169.8%;
+      font-style: normal;
+      font-weight: normal;
+      margin: 0px 0px 28px 0px;
+      text-align: center; }
+    .control__form {
+      display: flex;
+      flex-direction: column; }
+    .control__label {
+      color: #959595; }
+    .control__input {
+      color: #fffff;
+      font-size: 18px;
+      margin-bottom: 4rem; }
+    .control__policy {
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 4.42rem;
+      margin-top: -3rem; }
+    .control__button {
+      order: 1;
+      margin-bottom: -2rem;
+      max-width: 24.28rem;
+      min-height: 3.64rem;
+      font-size: 15px;
+      align-self: center; } }
 
 @media screen and (max-width: 570px) {
   .section__title__description {
