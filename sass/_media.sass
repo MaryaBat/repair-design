@@ -1,12 +1,33 @@
-@media screen and ( max-width: 1200px)
-  html
+@media screen and (max-width: 1367px)
+  .nav
+    &__item
+      font-size: 12px
+      margin-right: 0.3rem
+  .contacts
+    &__phone
+      margin-right: 2rem
+  .section-title
+    &__text
+      max-width: 24rem
+@media screen and (max-width: 1033px)
+  .html
     font-size: 12px
   .nav
     &__item
-      margin-right: 1rem
-@media screen and ( max-width: 992px)
+      font-size: 12px
+      margin-right: 0.3rem
+  .contacts
+    &__phone
+      margin-right: 0.8rem
+  .section-title
+    &__text
+      max-width: 24rem
+@media screen and (max-width: 992px)
   .nav
     display: none
+  .contacts
+    &__button
+      display: none
   .hero
     &__instagram
       display: none
@@ -19,7 +40,9 @@
     &-title
       &__text
         max-width: 25rem
-@media screen and ( max-width: 760px )
+@media screen and (max-width: 760px)
+  .nav
+    display: none
   .row
     flex-direction: column
     align-items: center
@@ -98,7 +121,17 @@
       min-height: 3.64rem
       font-size: 15px
       align-self: center
-@media screen and ( max-width: 570px )
+@media screen and ( max-width: 640px)
+  .hero
+    &__button
+      display: block
+      margin-bottom: 1.85rem
+    &__title
+      font-size: 1.4rem
+    &__text
+      font-size: 1.28rem
+      line-height: 135.84%
+@media screen and (max-width: 570px)
   .section
     &__title
       &__description
@@ -121,7 +154,6 @@
       line-height: 135.84%
     &__button
       display: block
-      min-width: 22.86rem
       margin-bottom: 1.85rem
       z-index: 3
     &::after

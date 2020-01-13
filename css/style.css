@@ -318,7 +318,7 @@ template {
   display: none; }
 
 .button {
-  padding: 11px 24px 11px 24px;
+  padding: 0.78rem 1.714rem 0.78rem 1.714rem;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -329,13 +329,15 @@ template {
     background-color: #E3B873;
     color: #fff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow, 0.3s; }
+    transition: box-shadow, 0.3s;
+    outline: none; }
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
-    color: #fff; }
+    color: #fff;
+    outline: none; }
     .button--outline:hover {
       box-shadow: none; }
 
@@ -704,6 +706,9 @@ img {
   flex-direction: column;
   flex-basis: 30%; }
 
+.control__input {
+  color: black; }
+
 .control__label {
   margin-bottom: -5px; }
 
@@ -815,9 +820,9 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input--light {
     margin-bottom: 3.482rem; }
-    .modal__input:last-of-type {
+    .modal__input--light:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
@@ -825,14 +830,30 @@ img {
     align-self: flex-end;
     padding: 1.36rem 3.571rem; }
 
-@media screen and (max-width: 1200px) {
-  html {
+@media screen and (max-width: 1367px) {
+  .nav__item {
+    font-size: 12px;
+    margin-right: 0.3rem; }
+  .contacts__phone {
+    margin-right: 2rem; }
+  .section-title__text {
+    max-width: 24rem; } }
+
+@media screen and (max-width: 1033px) {
+  .html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    font-size: 12px;
+    margin-right: 0.3rem; }
+  .contacts__phone {
+    margin-right: 0.8rem; }
+  .section-title__text {
+    max-width: 24rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
+    display: none; }
+  .contacts__button {
     display: none; }
   .hero__instagram {
     display: none; }
@@ -845,6 +866,8 @@ img {
     max-width: 25rem; } }
 
 @media screen and (max-width: 760px) {
+  .nav {
+    display: none; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -918,6 +941,16 @@ img {
       font-size: 15px;
       align-self: center; } }
 
+@media screen and (max-width: 640px) {
+  .hero__button {
+    display: block;
+    margin-bottom: 1.85rem; }
+  .hero__title {
+    font-size: 1.4rem; }
+  .hero__text {
+    font-size: 1.28rem;
+    line-height: 135.84%; } }
+
 @media screen and (max-width: 570px) {
   .section__title__description {
     max-width: 21.86rem; }
@@ -937,7 +970,6 @@ img {
     line-height: 135.84%; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
     margin-bottom: 1.85rem;
     z-index: 3; }
   .hero::after {
