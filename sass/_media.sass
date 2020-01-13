@@ -36,10 +36,27 @@
     &__title
       font-size: 1.64rem
       line-height: 132.83%
+  .swiper
+    &-slide
+      &__img
+        margin: auto
+        padding: 0
   .section
     &-title
+      &__heading--primary
+        text-align: center
       &__text
-        max-width: 25rem
+        min-width: 30rem
+        text-align: center
+        margin: auto
+        margin-bottom: 3rem
+      &__word
+        display: inline-block
+        text-align: center
+        padding: 0
+        margin: 0
+        &::after
+          display: none
 @media screen and (max-width: 760px)
   .nav
     display: none

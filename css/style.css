@@ -354,7 +354,7 @@ template {
   color: #fff;
   padding: 0.5rem 0; }
   .input--light::placeholder {
-    color: #fff; }
+    color: #ffff; }
 
 .policy__checkbox {
   opacity: 0;
@@ -830,6 +830,9 @@ img {
     align-self: flex-end;
     padding: 1.36rem 3.571rem; }
 
+.modal__input--light::placeholder {
+  color: #ffff; }
+
 @media screen and (max-width: 1367px) {
   .nav__item {
     font-size: 12px;
@@ -862,8 +865,23 @@ img {
   .hero__title {
     font-size: 1.64rem;
     line-height: 132.83%; }
+  .swiper-slide__img {
+    margin: auto;
+    padding: 0; }
+  .section-title__heading--primary {
+    text-align: center; }
   .section-title__text {
-    max-width: 25rem; } }
+    min-width: 30rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem; }
+  .section-title__word {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
+    .section-title__word::after {
+      display: none; } }
 
 @media screen and (max-width: 760px) {
   .nav {
