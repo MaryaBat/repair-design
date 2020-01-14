@@ -9,6 +9,9 @@
   .section-title
     &__text
       max-width: 24rem
+  .footer
+    &__map
+      padding: 1.85rem 9rem
 @media screen and (max-width: 1033px)
   .html
     font-size: 12px
@@ -57,6 +60,14 @@
         margin: 0
         &::after
           display: none
+  .footer
+    &__map
+      order: -2
+      padding: 1.85rem 3rem
+      max-width: 40.4rem
+    &__title__heading
+      margin-top: 2rem
+      margin-bottom: 1.64rem
 @media screen and (max-width: 760px)
   .nav
     display: none
@@ -151,7 +162,6 @@
       align-self: center
   .projects
     padding-bottom: 0rem
-   
 @media screen and ( max-width: 640px)
   .hero
     &__button
@@ -173,6 +183,9 @@
       font-size: 1.42rem
       line-height: 2rem
       text-align: center
+      &__heading
+        max-width: 100%
+        padding: 0
     &__wrap
       background-color: $dark
       margin-top: 0px
@@ -180,8 +193,13 @@
     &__menu
       display: none
     &__button
-      padding: 1.357rem 8rem
-      margin-bottom: 2rem
+      padding: 1.357rem 9rem
+      max-width: 100%
+    &__container
+      padding-bottom: 2.714rem
+    &__map
+      padding: 1.85rem 0rem
+      max-width: 100%
   .design
     background: $dark
     padding-bottom: 4.28rem
@@ -191,6 +209,7 @@
   .projects
     padding-bottom: 0rem
     padding-top: 60px
+  
 @media screen and (max-width: 570px)
   .section
     &__title

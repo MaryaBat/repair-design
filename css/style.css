@@ -366,7 +366,7 @@ template {
   opacity: 0;
   visibility: hidden; }
   .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
+    background: #E3B873 url("../img/Check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
   display: flex;
@@ -802,7 +802,6 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -20rem;
-    margin-bottom: 3.714em;
     padding: 2.5rem; }
   .footer__title {
     text-transform: uppercase;
@@ -814,6 +813,27 @@ img {
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 3.17rem; }
+    .footer__title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.42rem;
+      line-height: 2rem;
+      margin-top: 2.5rem;
+      text-align: center; }
+      .footer__title__heading--primary {
+        color: #E3B873;
+        max-width: 42.07rem;
+        align-content: center;
+        padding: 0rem 2rem; }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; }
   .footer__input--light {
     outline: none; }
     .footer__input--light::placeholder {
@@ -842,7 +862,12 @@ img {
     padding: 1.285rem 4.785rem; }
   .footer__menu {
     background-color: #131313;
-    padding: 4.285rem 0; }
+    padding: 4.285rem 0;
+    margin-top: 2rem; }
+  .footer__map {
+    min-height: 33.21rem;
+    width: 100%;
+    padding: 1.85rem 17.86rem; }
 
 .modal {
   opacity: 0;
@@ -912,7 +937,9 @@ img {
   .contacts__phone {
     margin-right: 2rem; }
   .section-title__text {
-    max-width: 24rem; } }
+    max-width: 24rem; }
+  .footer__map {
+    padding: 1.85rem 9rem; } }
 
 @media screen and (max-width: 1033px) {
   .html {
@@ -953,7 +980,14 @@ img {
     padding: 0;
     margin: 0; }
     .section-title__word::after {
-      display: none; } }
+      display: none; }
+  .footer__map {
+    order: -2;
+    padding: 1.85rem 3rem;
+    max-width: 40.4rem; }
+  .footer__title__heading {
+    margin-top: 2rem;
+    margin-bottom: 1.64rem; } }
 
 @media screen and (max-width: 760px) {
   .nav {
@@ -1062,6 +1096,9 @@ img {
       font-size: 1.42rem;
       line-height: 2rem;
       text-align: center; }
+      .footer__title__heading {
+        max-width: 100%;
+        padding: 0; }
     .footer__wrap {
       background-color: #131313;
       margin-top: 0px;
@@ -1069,8 +1106,13 @@ img {
     .footer__menu {
       display: none; }
     .footer__button {
-      padding: 1.357rem 8rem;
-      margin-bottom: 2rem; }
+      padding: 1.357rem 9rem;
+      max-width: 100%; }
+    .footer__container {
+      padding-bottom: 2.714rem; }
+    .footer__map {
+      padding: 1.85rem 0rem;
+      max-width: 100%; }
   .design {
     background: #131313;
     padding-bottom: 4.28rem; }
