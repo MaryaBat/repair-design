@@ -383,8 +383,8 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-label.invalide {
-  color: #fc0808; }
+label.invalid {
+  color: tomato; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -628,7 +628,10 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  opacity: 0; }
+  .swiper-slide-active {
+    opacity: 1; }
   .swiper-slide__img {
     margin-top: -14rem;
     margin-left: 3rem;
@@ -1000,6 +1003,9 @@ img {
   .control {
     padding-bottom: 0;
     background-color: #131313; }
+    .control__section-title {
+      margin-bottom: 2.224rem;
+      margin-top: 0rem; }
     .control__video {
       max-width: 100%;
       min-height: 14.78rem; }
@@ -1032,7 +1038,9 @@ img {
       max-width: 24.28rem;
       min-height: 3.64rem;
       font-size: 15px;
-      align-self: center; } }
+      align-self: center; }
+  .projects {
+    padding-bottom: 0rem; } }
 
 @media screen and (max-width: 640px) {
   .hero__button {
@@ -1068,7 +1076,10 @@ img {
     padding-bottom: 4.28rem; }
   .section--dark {
     background: #131313;
-    padding: 0px; } }
+    padding: 0px; }
+  .projects {
+    padding-bottom: 0rem;
+    padding-top: 60px; } }
 
 @media screen and (max-width: 570px) {
   .section__title__description {
@@ -1100,4 +1111,8 @@ img {
   .section-title__text {
     text-align: center;
     margin: auto;
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  .projects {
+    padding-bottom: 0rem; }
+  .control__button {
+    padding: 1.357rem 8rem; } }

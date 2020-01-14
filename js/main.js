@@ -55,7 +55,7 @@ $(document).ready(function () {
       userName: {
         required: true,
         minlength: 2,
-        maxlenght: 15
+        maxlength: 15
     },
       userPhone: "required",
       // правило-обьект (блок)
