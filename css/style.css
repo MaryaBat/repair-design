@@ -342,7 +342,8 @@ template {
       box-shadow: none; }
 
 .label {
-  font-size: 1.07rem; }
+  font-size: 1.07rem;
+  color: #959595; }
   .label--light {
     color: rgba(255, 255, 255, 0.5); }
 
@@ -352,9 +353,14 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   color: #fff;
-  padding: 0.5rem 0; }
-  .input--light::placeholder {
-    color: #ffff; }
+  padding: 0.5rem 0;
+  outline: none; }
+  .input::placeholder {
+    color: #181818; }
+  .input--light {
+    outline: none; }
+    .input--light::placeholder {
+      color: #ffffff; }
 
 .policy__checkbox {
   opacity: 0;
@@ -364,7 +370,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     height: 18px;
@@ -373,6 +380,14 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
+
+label.invalide {
+  color: #fc0808; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   width: 80%;
@@ -771,8 +786,60 @@ img {
   padding: 1.214rem 2.6rem;
   white-space: nowrap; }
 
-.design__section-title {
-  margin-bottom: 2.78rem; }
+.design {
+  padding-bottom: 30rem; }
+  .design__section-title {
+    margin-bottom: 2.78rem; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -20rem;
+    margin-bottom: 3.714em;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.43rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 3.17rem; }
+  .footer__input--light {
+    outline: none; }
+    .footer__input--light::placeholder {
+      color: #ffffff; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 37.142rem;
+    margin: auto;
+    justify-content: space-between; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.7rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
@@ -820,10 +887,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input--light {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.482rem; }
-    .modal__input--light:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -886,6 +955,12 @@ img {
 @media screen and (max-width: 760px) {
   .nav {
     display: none; }
+  .section-title__text {
+    min-width: 21.78rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 158.48%; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -962,12 +1037,38 @@ img {
 @media screen and (max-width: 640px) {
   .hero__button {
     display: block;
-    margin-bottom: 1.85rem; }
-  .hero__title {
-    font-size: 1.4rem; }
-  .hero__text {
-    font-size: 1.28rem;
-    line-height: 135.84%; } }
+    margin-bottom: 1.85rem;
+    padding: 19px 70px 19px 70px;
+    margin-right: 0; }
+  .button--outline {
+    padding: 19px 85px 19px 86px;
+    margin: 0; }
+    .button--outline__title {
+      font-size: 1.4rem; }
+    .button--outline__text {
+      font-size: 1.28rem;
+      line-height: 135.84%; }
+  .footer {
+    background: #131313; }
+    .footer__title {
+      font-size: 1.42rem;
+      line-height: 2rem;
+      text-align: center; }
+    .footer__wrap {
+      background-color: #131313;
+      margin-top: 0px;
+      padding: 0px; }
+    .footer__menu {
+      display: none; }
+    .footer__button {
+      padding: 1.357rem 8rem;
+      margin-bottom: 2rem; }
+  .design {
+    background: #131313;
+    padding-bottom: 4.28rem; }
+  .section--dark {
+    background: #131313;
+    padding: 0px; } }
 
 @media screen and (max-width: 570px) {
   .section__title__description {

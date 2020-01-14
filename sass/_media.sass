@@ -60,6 +60,14 @@
 @media screen and (max-width: 760px)
   .nav
     display: none
+  .section
+    &-title
+      &__text
+        min-width: 21.78rem
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 158.48%
   .row
     flex-direction: column
     align-items: center
@@ -143,11 +151,38 @@
     &__button
       display: block
       margin-bottom: 1.85rem
+      padding: 19px 70px 19px 70px
+      margin-right: 0
+  .button--outline
+    padding: 19px 85px 19px 86px
+    margin: 0
     &__title
       font-size: 1.4rem
     &__text
       font-size: 1.28rem
       line-height: 135.84%
+  .footer
+    background: $dark
+    &__title
+      font-size: 1.42rem
+      line-height: 2rem
+      text-align: center
+    &__wrap
+      background-color: $dark
+      margin-top: 0px
+      padding: 0px
+    &__menu
+      display: none
+    &__button
+      padding: 1.357rem 8rem
+      margin-bottom: 2rem
+  .design
+    background: $dark
+    padding-bottom: 4.28rem
+  .section--dark
+    background: $dark
+    padding: 0px
+      
 @media screen and (max-width: 570px)
   .section
     &__title
