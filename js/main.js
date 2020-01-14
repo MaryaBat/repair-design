@@ -93,7 +93,8 @@ $(document).ready(function () {
         userEmail: {
           required: true,
           email: true
-        }
+        },
+        userQuestion: "required",
       }, // сообщения
       messages: {
         userName: {
@@ -105,7 +106,8 @@ $(document).ready(function () {
         userEmail: {
           required: "Обязательно укажите email",
           email: "Введите в формате: name@domain.com"
-        }
+        },
+        userQuestion: "Поле обязательно для заполнения"
       }
     });
 
